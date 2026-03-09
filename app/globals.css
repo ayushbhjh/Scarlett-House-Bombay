@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-scarlett-black text-scarlett-cream font-body antialiased;
+  background-image: radial-gradient(circle at 15% 20%, rgba(201, 162, 90, 0.08) 0%, transparent 35%), radial-gradient(circle at 85% 0%, rgba(109, 31, 43, 0.2) 0%, transparent 40%), linear-gradient(140deg, #0c0b0a 0%, #19110f 45%, #2a0f14 100%);
+}
+
+.section-shell {
+  @apply mx-auto w-[min(1150px,92%)] py-20 md:py-24;
+}
+
+.glass-card {
+  @apply border border-white/10 bg-white/5 backdrop-blur-md;
+}
+
+.gold-ring {
+  box-shadow: 0 0 0 1px rgba(201, 162, 90, 0.45), 0 18px 35px rgba(0, 0, 0, 0.25);
+}
